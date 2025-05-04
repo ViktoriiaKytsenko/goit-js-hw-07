@@ -93,7 +93,16 @@ body {
   border-radius: 6px;
   box-sizing: border-box;
   font-size: 14px;
+  font-weight: 600;
 }
+
+.input {
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
 /* #endregion task 1 */
 
 /* #region task 2 */
@@ -176,3 +185,100 @@ h1 {
   margin: 0;
 }
 /* #endregion task 3 */
+
+/* #region task 4 */
+.login-form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.input-hover[type="email"]:hover,
+.input-hover[type="password"]:hover {
+  border-color: #9b5de5; /* яскравий фіолетовий */
+  box-shadow: 0 0 0 2px rgba(155, 93, 229, 0.2);
+}
+
+.button-hover {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+}
+
+.button-hover:hover {
+  border-color: #6c8cff;
+  box-shadow: 0 0 0 2px rgba(155, 93, 229, 0.2);
+}
+
+.destroy {
+  background-color: #ff4d4d; /* червоний */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.destroy:hover {
+  background-color: #ff7a7a;
+}
+/* #endregion task 4 */
+
+/* #region task 5 */
+.js-widget {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.js-change-color {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 148px;
+  height: 40px;
+  background-color: #4e75ff;
+}
+
+.title-widget {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  padding-bottom: 16px;
+}
+
+button.js-change-color {
+  background-color: #4e75ff; /* або будь-який інший */
+  border: 2px solid #4e75ff; /* ← ось це! */
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+/* #endregion task 5 */
