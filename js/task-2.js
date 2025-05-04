@@ -22,5 +22,18 @@ const images = [
   {
     url: "https://cdn.pixabay.com/photo/2019/05/17/04/35/lighthouse-4208843_1280.jpg",
     alt: "Lighthouse Coast Sea",
-  }
+  },
 ];
+
+// Знаходимо ul.gallery
+const gallery = document.querySelector(".gallery");
+
+// Генеруємо розмітку як один великий рядок
+const markup = images
+  .map(({ url, alt }) => {
+    return `<li class="gallery-item"><img src="${url}" alt="${alt}" class="gallery-img"></li>`;
+  })
+  .join("");
+
+// Додаємо весь HTML однією операцією
+gallery.insertAdjacentHTML("beforeend", markup);

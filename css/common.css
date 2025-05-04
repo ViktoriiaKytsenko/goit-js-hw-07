@@ -95,3 +95,84 @@ body {
   font-size: 14px;
 }
 /* #endregion task 1 */
+
+/* #region task 2 */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+  justify-content: center;
+}
+
+.gallery-item {
+  flex: 1 1 calc(33% - 32px);
+  box-sizing: border-box;
+}
+
+.gallery-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+/* #endregion task 2 */
+
+/* #region task 3 */
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 400px;
+  width: 100%;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: #999;
+  font-size: 14px;
+}
+
+.anonymous-input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 16px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+/* Ховер-ефект */
+input[type="text"]:hover {
+  border-color: #9b5de5; /* яскравий фіолетовий */
+  box-shadow: 0 0 0 2px rgba(155, 93, 229, 0.2);
+}
+
+h1 {
+  font-size: 24px;
+  color: #2c2c2c;
+  font-weight: 600;
+  margin: 0;
+}
+/* #endregion task 3 */
